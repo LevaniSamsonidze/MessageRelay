@@ -1,0 +1,101 @@
+/* Container */
+.signupContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+}
+
+/* Navbar */
+.signupNavbar {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.signupLogo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.signupNavLinks {
+    display: flex;
+    gap: 15px;
+}
+
+.signupLink {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.signupLink:hover {
+    text-decoration: underline;
+}
+
+/* Card */
+.signupCard {
+    background: #fff;
+    padding: 30px 25px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Title */
+.signupTitle {
+    text-align: center;
+    font-size: 1.7rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Inputs */
+.signupInput {
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.2s;
+}
+
+.signupInput:focus {
+    border-color: #74ebd5;
+}
+
+/* Button */
+.signupButton {
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background-color: #74ebd5;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.signupButton:hover {
+    background-color: #67d1c6;
+}
+
+/* Footer */
+.signupFooter {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 10px;
+}
