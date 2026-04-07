@@ -5,7 +5,7 @@ const PhotoUploud = async (req, res) =>{
     const user = await User.findOne({id});
     user.proflePhoto = req.body.photo;
     await user.save()
-    console.log(user)
+    res.status(201).json({message: "Please wait, the photo will upload soon, restart the site"})
 }
 
 module.exports = PhotoUploud;

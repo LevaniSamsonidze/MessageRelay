@@ -3,15 +3,17 @@ const cors = require("cors");
 const mongoose = require("mongoose");
 require("dotenv").config();
 const appRouter = require("./route/Route");
+const bodyParser = require("body-parser");
 const { ErrorHandler } = require("./utils/ErorrHendler");
-
 
 const app = express();
 
-app.use(express.json());
 app.use(cors());
+app.use(express.json({ limit: "50mb" }));
+app.use(bodyParser.json({ limit: "50mb" }));
 app.use("/", appRouter);
-app.use(ErrorHandler)
+app.use(ErrorHandler);
+
 
 mongoose.connect(process.env.DATA_URL)
     .then(() => {
