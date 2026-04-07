@@ -102,7 +102,7 @@ const MainPage = () => {
                         onChange={onChangeHandler}
                     />
 
-                    <button className={styles.logoutBtn} disabled={true} onClick={logOutHendler}>
+                    <button className={styles.logoutBtn} onClick={logOutHendler}>
                         Log out
                     </button>
                 </div>
