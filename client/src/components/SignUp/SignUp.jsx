@@ -34,7 +34,7 @@ const SignUp = () => {
         if (!response.ok) {
             toast.error(data); 
         } else {
-            toast.error(data.message);   
+            toast.success(data.message);   
         }
     }
 
